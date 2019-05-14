@@ -1,0 +1,15 @@
+﻿<AML>
+ <Item type="Method" id="7685DAE6960545B19AA46EAB8EF79E11" action="add">
+  <execution_allowed_to keyed_name="Administrators" type="Identity">2618D6F5A90949BAA7E920D1B04C7EE1</execution_allowed_to>
+  <method_code><![CDATA[// Check if the window is already fullscreen
+if (this.document.fullscreen) {
+    this.document.exitFullscreen();
+} else {
+    // Get the element containing the form
+    var mainFormElem = this.document.getElementById("MainDataForm");
+    mainFormElem.requestFullscreen();
+}]]></method_code>
+  <method_type>JavaScript</method_type>
+  <name>labs_fullscreenEditor_cui</name>
+ </Item>
+</AML>

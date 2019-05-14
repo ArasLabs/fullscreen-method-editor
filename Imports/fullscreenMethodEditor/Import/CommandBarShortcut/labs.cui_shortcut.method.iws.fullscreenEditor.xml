@@ -1,0 +1,7 @@
+﻿<AML>
+ <Item type="CommandBarShortcut" id="4C65170DD3C7417B9E0C2B4D3702D37C" action="add">
+  <on_click_handler keyed_name="labs_fullscreenEditor_cui" type="Method">7685DAE6960545B19AA46EAB8EF79E11</on_click_handler>
+  <shortcut>ctrl+shift+f</shortcut>
+  <name>labs.cui_shortcut.method.iws.fullscreenEditor</name>
+ </Item>
+</AML>

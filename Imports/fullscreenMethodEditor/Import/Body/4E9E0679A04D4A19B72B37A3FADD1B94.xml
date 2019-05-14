@@ -1,0 +1,18 @@
+﻿<AML>
+ <Item type="Body" id="4E9E0679A04D4A19B72B37A3FADD1B94" action="edit">
+  <css>html, body
+{
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+/* We're adding this explicitly here because the background was being lost in fullscreen mode */
+#MainDataForm
+{
+       background: #dddddd;
+}</css>
+ </Item>
+</AML>
