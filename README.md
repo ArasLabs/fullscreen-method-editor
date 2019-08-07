@@ -8,13 +8,15 @@ This project will work with both the standard method editor as well as the [Alte
 
 Release | Notes
 --------|--------
-[v1.0](https://github.com/ArasLabs/fullscreen-method-editor/releases/tag/v1.0) | Initial release
+[v1.1.0](https://github.com/ArasLabs/fullscreen-method-editor/releases/tag/v1.1.0) | Upgrading to 12.0
+[v1.0.0](https://github.com/ArasLabs/fullscreen-method-editor/releases/tag/v1.0.0) | Initial release
 
 #### Supported Aras Versions
 
 Project | Aras
 --------|------
-[v1.0](https://github.com/ArasLabs/fullscreen-method-editor/releases/tag/v1.0) | 11.0 SP15
+[v1.1.0](https://github.com/ArasLabs/fullscreen-method-editor/releases/tag/v1.1.0) | 12.0
+[v1.0.0](https://github.com/ArasLabs/fullscreen-method-editor/releases/tag/v1.0.0) | 11.0 SP15
 
 ## Installation
 
@@ -23,7 +25,7 @@ Project | Aras
 
 ### Pre-requisites
 
-1. Aras Innovator installed (version 11.0 SP15+ preferred)
+1. Aras Innovator installed (version 12.0+ preferred)
 2. Aras Package Import tool
 3. Fullscreen Method Editor import package
 

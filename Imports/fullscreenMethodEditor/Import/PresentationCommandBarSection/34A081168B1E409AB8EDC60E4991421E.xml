@@ -1,0 +1,23 @@
+﻿<AML>
+ <Item type="PresentationCommandBarSection" id="34A081168B1E409AB8EDC60E4991421E" action="add">
+  <related_id keyed_name="aras.labs.Method_ItemWindowShortcuts" type="CommandBarSection">
+   <Item type="CommandBarSection" id="F4D2560E7EC84E41926148D12453AF33" action="add">
+    <classification>Data Model</classification>
+    <location keyed_name="ItemWindowShortcuts" type="cui_Location">3330A9C3B87743B0BD80AE2EBB316CE0</location>
+    <name>aras.labs.Method_ItemWindowShortcuts</name>
+    <Relationships>
+     <Item type="CommandBarSectionItem" id="847E35169F274B0697563FE1056F1D3A" action="add">
+      <action>Add</action>
+        <related_id keyed_name="labs.cui_shortcut.method.iws.fullscreenEditor" type="CommandBarItem">4C65170DD3C7417B9E0C2B4D3702D37C</related_id>
+      <role keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</role>
+      <sort_order>128</sort_order>
+      <source_id keyed_name="aras.labs.Method_ItemWindowShortcuts" type="CommandBarSection">F4D2560E7EC84E41926148D12453AF33</source_id>
+     </Item>
+    </Relationships>
+   </Item>
+  </related_id>
+  <role keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</role>
+  <sort_order>256</sort_order>
+  <source_id keyed_name="Method_TOC_Configuration" type="PresentationConfiguration">4611250AD10CDFC236326AA7318BB90D</source_id>
+ </Item>
+</AML>

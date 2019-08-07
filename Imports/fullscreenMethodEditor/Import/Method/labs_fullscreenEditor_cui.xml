@@ -1,13 +1,61 @@
 ﻿<AML>
  <Item type="Method" id="7685DAE6960545B19AA46EAB8EF79E11" action="add">
   <execution_allowed_to keyed_name="Administrators" type="Identity">2618D6F5A90949BAA7E920D1B04C7EE1</execution_allowed_to>
-  <method_code><![CDATA[// Check if the window is already fullscreen
-if (this.document.fullscreen) {
-    this.document.exitFullscreen();
-} else {
-    // Get the element containing the form
+  <method_code><![CDATA[
+// Check if the window is already fullscreen
+if (this.document.fullscreen ||
+    this.document.mozFullScreen ||
+    this.document.webkitIsFullScreen ||
+    this.document.msFullscreenElement) 
+{
+    closeFullscreen();
+}
+else
+{
     var mainFormElem = this.document.getElementById("MainDataForm");
-    mainFormElem.requestFullscreen();
+    openFullscreen(mainFormElem);
+}
+
+// Get the correct requestFullscreen function based on the browser
+function openFullscreen(elem)
+{
+    if (elem.requestFullscreen)
+    {
+        elem.requestFullscreen();
+    }
+    else if (elem.mozRequestFullScreen)
+    {
+        elem.mozRequestFullScreen();
+    }
+    else if (elem.webkitRqeuestFullscreen)
+    {
+        elem.webkitRequestFullscreen();
+    }
+    else if (elem.msRequestFullscreen)
+    {
+        elem.msRequestFullscreen();
+    }
+}
+
+// Get the correct exitFullscreen function based on the browser
+function closeFullscreen()
+{
+    if (this.document.exitFullscreen)
+    {
+        this.document.exitFullscreen();
+    }
+    else if (this.document.mozCancelFullScreen)
+    {
+        this.document.mozCancelFullScreen();
+    }
+    else if (this.document.webkitCancelFullScreen)
+    {
+        this.document.webkitCancelFullScreen();
+    }
+    else if (this.document.msExitFullscreen)
+    {
+        this.document.msExitFullscreen();
+    }
 }]]></method_code>
   <method_type>JavaScript</method_type>
   <name>labs_fullscreenEditor_cui</name>
